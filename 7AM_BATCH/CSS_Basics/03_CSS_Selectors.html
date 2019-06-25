@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+        body{
+            margin-bottom: 300px;
+        }
+        p{
+            background-color: orangered;
+            color: white;
+            padding: 10px;
+        }
+
+        #blue{
+            background-color: blue;
+        }
+        #orange{
+            background-color: orange;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        input[type='text']{
+             background-color: purple;
+         }
+        input[type='text']:focus{
+            background-color: yellow;
+            outline: none;
+            border: 2px solid blue;
+            font-size: 20px;
+        }
+        input[type='password']{
+            background-color: lightgreen;
+        }
+        input[type='submit']{
+            background-color: red;
+        }
+        input[type='submit']:hover{
+            background-color: green;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tag Selector -->
+    <h2>Tag Selector</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet fugit minus odit omnis, qui recusandae rerum totam. Accusamus adipisci architecto beatae blanditiis consectetur corporis deleniti dolor, enim error est fugit harum illum incidunt inventore maiores minus natus nemo numquam officiis praesentium quaerat quas quisquam repudiandae similique vel vero voluptas!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet fugit minus odit omnis, qui recusandae rerum totam. Accusamus adipisci architecto beatae blanditiis consectetur corporis deleniti dolor, enim error est fugit harum illum incidunt inventore maiores minus natus nemo numquam officiis praesentium quaerat quas quisquam repudiandae similique vel vero voluptas!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet fugit minus odit omnis, qui recusandae rerum totam. Accusamus adipisci architecto beatae blanditiis consectetur corporis deleniti dolor, enim error est fugit harum illum incidunt inventore maiores minus natus nemo numquam officiis praesentium quaerat quas quisquam repudiandae similique vel vero voluptas!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet fugit minus odit omnis, qui recusandae rerum totam. Accusamus adipisci architecto beatae blanditiis consectetur corporis deleniti dolor, enim error est fugit harum illum incidunt inventore maiores minus natus nemo numquam officiis praesentium quaerat quas quisquam repudiandae similique vel vero voluptas!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet fugit minus odit omnis, qui recusandae rerum totam. Accusamus adipisci architecto beatae blanditiis consectetur corporis deleniti dolor, enim error est fugit harum illum incidunt inventore maiores minus natus nemo numquam officiis praesentium quaerat quas quisquam repudiandae similique vel vero voluptas!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet fugit minus odit omnis, qui recusandae rerum totam. Accusamus adipisci architecto beatae blanditiis consectetur corporis deleniti dolor, enim error est fugit harum illum incidunt inventore maiores minus natus nemo numquam officiis praesentium quaerat quas quisquam repudiandae similique vel vero voluptas!</p>
+
+    <!-- ID Selector -->
+    <h2>ID Selector</h2>
+    <div>
+        <h3 id="blue">Welcome to CSS</h3>
+        <h3 id="orange">Welcome to JS</h3>
+        <h3>Welcome to HTML</h3>
+        <h3>Welcome to Bootstrap</h3>
+    </div>
+
+    <!-- Class Selector -->
+    <ul class="yellow">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+    </ul>
+
+    <ol class="yellow">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+    </ol>
+
+    <h1 class="yellow">Welcome to CSS Class</h1>
+
+    <!-- Attribute Selection -->
+    <form>
+        <input id="purple" type="text" placeholder="User Name">
+        <br>
+        <input type="password" placeholder="Password">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

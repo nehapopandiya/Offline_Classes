@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positions</title>
+    <style>
+        body{
+            height: 5000px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 5px black;
+            border: 5px solid white;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0,0,0,0.5);
+            position: relative;
+            left: 200px;
+            z-index: 2;
+        }
+        .box1{
+            background-color: red;
+            position: relative;
+            left: 200px;
+            top: 50px;
+            z-index: 3;
+        }
+        .box2{
+            background-color: blue;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .box3{
+            background-color: yellow;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+        .box4{
+            background-color: green;
+            position: fixed;
+            top: 30%;
+            right: 50%;
+            z-index: 1;
+        }
+        .box5{
+            background-color: purple;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box box1"></div>
+    <div class="container">
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam aperiam assumenda aut consectetur debitis, delectus doloremque facere facilis harum id illo itaque, iusto maiores modi mollitia pariatur perferendis quia quo quos reiciendis reprehenderit sequi similique totam, unde vero. Deserunt earum magni minus neque numquam placeat provident veniam. Libero!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam aperiam assumenda aut consectetur debitis, delectus doloremque facere facilis harum id illo itaque, iusto maiores modi mollitia pariatur perferendis quia quo quos reiciendis reprehenderit sequi similique totam, unde vero. Deserunt earum magni minus neque numquam placeat provident veniam. Libero!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam aperiam assumenda aut consectetur debitis, delectus doloremque facere facilis harum id illo itaque, iusto maiores modi mollitia pariatur perferendis quia quo quos reiciendis reprehenderit sequi similique totam, unde vero. Deserunt earum magni minus neque numquam placeat provident veniam. Libero!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam aperiam assumenda aut consectetur debitis, delectus doloremque facere facilis harum id illo itaque, iusto maiores modi mollitia pariatur perferendis quia quo quos reiciendis reprehenderit sequi similique totam, unde vero. Deserunt earum magni minus neque numquam placeat provident veniam. Libero!</p>
+
+
+
+</body>
+</html>

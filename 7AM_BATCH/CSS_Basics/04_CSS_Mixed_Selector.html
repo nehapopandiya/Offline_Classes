@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mixed Selector</title>
+    <style>
+        body{
+            margin-bottom: 300px;
+        }
+        ul{
+            background-color: lightgreen;
+        }
+        ol{
+            background-color: orange;
+        }
+
+        ul li{
+            margin: 5px;
+        }
+
+        ul li:first-child{
+            background-color: blueviolet;
+        }
+        ul li:nth-child(2){
+            background-color: red;
+        }
+        ul li:nth-child(3){
+            background-color: yellow;
+         }
+        ul li:nth-child(4){
+            background-color: purple;
+        }
+        ul li:last-child{
+            background-color: lightsalmon;
+        }
+
+        ol li{
+            margin: 5px;
+            color: white;
+        }
+
+        ol li:nth-child(even){
+            background-color: darkred;
+        }
+        ol li:nth-child(odd){
+            background-color: green;
+        }
+
+
+        .orange{
+            background-color: orangered;
+            color: white;
+        }
+        .green{
+            background-color: green;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        .blue{
+            background-color: blue;
+        }
+
+        input{
+            background-color: orange;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+    </ul>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+    </ol>
+
+
+    <p id="yellow" class="blue orange green" style="background-color: purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium alias, dicta, earum expedita ipsum necessitatibus neque non odit perferendis ratione sed sunt veniam? A ad blanditiis cum dolor doloribus exercitationem fuga illo inventore iure maiores nesciunt non qui quidem similique, vitae. Consequatur dolore harum maxime quis sapiente suscipit veritatis.</p>
+
+
+    <form>
+        <input type="text" placeholder="User Name" class="blue-text green-text" id="black-text">
+    </form>
+
+
+</body>
+</html>
